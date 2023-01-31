@@ -1,0 +1,83 @@
+<!-- SAMAD AHMAD -->
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+
+       <!-- google Smythe font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <h2>The best burgers & pizzas in town.</h2>
+        </header>
+
+        <!-- === Food options list === -->
+        <!-- pizza item -->
+        <main class="container foodOption">
+            <!-- js renders food items here -->
+            
+            
+        </main>
+
+        <!-- Total order list -->
+        <section class="container orderFinal">
+            <h3>Your order</h3>
+            
+            <div class="orderItems">
+                <!-- render final order list here -->
+            </div>
+            
+    
+            <div class="orderTotal">
+                <p>Total price:</p>
+                <p id="totalPrice">$26</p>
+            </div>
+            
+            <button type="button" data-completebtn="completebtn">Complete order</button>
+        </section>
+        
+        
+        <!-- Enter card details POPUP -->
+        <section class="popup">
+            <p>Enter card details</p>
+            <form id="formPopup">
+                <input 
+                type="text"
+                name="fullName"
+                placeholder="Enter your name"
+                aria-label="name"
+                required>
+                <input 
+                type="number"
+                name="cardNum"
+                placeholder="Enter card number"
+                aria-label="Card Number"
+                required>
+                <input 
+                type="number"
+                name="cvvNum"
+                placeholder="Enter CVV"
+                aria-label="CCV number"
+                required>
+                
+                <input 
+                type="submit"
+                aria-label="submit"
+                >
+            </form>
+        </section>
+        <!-- Order is on its way render under food list -->
+        <section class="orderComplete">
+            <!-- render through JS -->
+        </section>
+        
+        
+
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

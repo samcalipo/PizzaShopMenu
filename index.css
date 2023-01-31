@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+body {
+    padding: 0 0 100px 0;
+    margin: 0 auto 100px auto;
+    box-sizing: border-box;
+    width: 900px;
+
+    font-family: 'Smythe', cursive;
+} 
+
+
+/* ============== HEADER SECTION ============ */
+header {
+    background-image: url('images/burgerBG.jpg');
+    background-position: 30px -150px;
+    object-fit: cover;
+    height: 305px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+
+    color: whitesmoke;
+
+}
+
+header h1{
+    margin-left: 60px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 59px;
+
+}
+
+header h2{
+    margin-left: 60px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+
+}
+
+/* ============ FOOD SELECTION SECTION ============= */
+/* this class used for 2 sections */
+.container{ 
+    margin: 50px auto;
+    width: 800px;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    border-bottom: 1px solid #D2D2D2;
+    padding: 50px 0;
+}
+
+
+.item img{
+   width: 200px;
+   height: 200px;
+   object-fit: fill;
+
+}
+
+.item button{
+    color: #6b6b6b;
+    border: 3px solid #e6e6e6;
+    background-color: white;
+    margin: 0 0 100px auto;
+    padding: 10px 17px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.item button:hover{
+    background-color: #6b6b6b;
+    color: whitesmoke;
+}
+
+.item-Details{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+ 
+    gap: 5px;
+}
+
+.item-Details h3{
+    font-size: 50px;
+}
+.item-Details p:first-of-type{
+    font-size: 20px;
+    color: #8B8B8B;
+}
+.item-Details p:nth-of-type(2){
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/* ============ TOTAL ORDER SECTION ========== */
+
+/* .container{} used here for layout */
+
+/* ORDER TOTAL NOT ON DISPLAY */
+.orderFinal{
+    display: none;
+    padding-top: 50px;
+}
+.orderFinal h3{
+    text-align: center;
+    font-size: 40px;
+}
+
+.orderItem {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 20px;
+}
+.orderItems p{
+    font-size: 40px;
+}
+
+.orderItems p:last-child{
+    margin-left: auto;
+}
+.orderItems button{
+    margin-top: 2px;
+    border: none;
+    background-color: white;
+    color: #BBBBBB;
+    cursor: pointer;
+}
+
+.orderItems button:hover{
+    color: #686868;
+    
+}
+
+
+.orderTotal {
+    display: flex;
+    border-top: 2px solid #393333;
+    margin-top: 15px;
+    padding-top: 15px;
+    justify-content: space-between;
+
+    font-size: 40px;
+}
+
+.orderFinal > button:last-of-type{
+    margin-top: 50px;
+    width: 100%;
+    height: 60px;
+    background-color: #16DB99;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.orderFinal > button:last-of-type:hover{
+    background-color: #14b17c;
+
+}
+
+/* ========== ENTER CARDS POP UP SECTION ========== */
+.popup {
+    /* CURRENTLY NOT ON DISPLAY */
+    display: none; 
+    position: fixed;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 550px;
+    height: 500px;
+    background-color: white;
+    box-shadow: rgba(156, 156, 156, 0.56)0 0  100px 100px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.popup p{
+    font-size: 30px;
+    padding: 30px 0 50px;
+    font-weight: bold;
+       
+}
+
+.popup input{
+    width: 100%;
+    height: 70px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid #757575;
+}
+.popup input:hover{
+    background-color: whitesmoke;
+}
+.popup input[type="submit"]{
+    background-color: #16DB99;
+    border: 1px solid #16DB99;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.popup input[type="submit"]:hover{
+    background-color: #14b17c;
+}
+
+/* =========== ORDER IS ON ITS WAY SECTION ========= */
+
+.orderComplete {
+    display: none;
+    margin: 40px auto 0;
+    width: 100%;
+    height: 120px;
+    background-color: #ECFDF5;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+.orderComplete p {
+    color: #065F46;
+    font-size: 35px;
+}
